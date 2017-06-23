@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "DownloadOperation.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    //准备队列
+    NSOperationQueue *queue = [NSOperationQueue new];
+    
+    //操作
+    DownloadOperation *op = [DownloadOperation new];
+    
+    
+    
+    //将操作添加到队列
+    [queue addOperation:op];
+    
 }
 
 
