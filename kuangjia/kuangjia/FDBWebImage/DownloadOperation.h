@@ -9,5 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 @interface DownloadOperation : NSOperation
+@property(nonatomic,copy)NSString* urlString;
+
+
++(instancetype)DownloadOperationWithURLString:(NSString *)url finished: (void(^))() (UIImage *)image
+
+
+
 
 @end

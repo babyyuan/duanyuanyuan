@@ -23,7 +23,7 @@
     //操作
     DownloadOperation *op = [DownloadOperation new];
     
-    
+    op.urlString = @"";
     
     //将操作添加到队列
     [queue addOperation:op];
